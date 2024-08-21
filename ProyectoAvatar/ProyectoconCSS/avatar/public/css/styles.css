@@ -5,8 +5,9 @@
   --secundario: #070707;
 }
 
+
 body {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Herculanum LT Pro', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,10 +43,9 @@ body {
 
   
 .seleccion-ataque {
+  background-color: rgba(0,0,0,0.8);
   display: flex;
   justify-content: left;
-  margin: 1rem;
-  padding: 1rem;
   font-size: 2rem;
   color: var(--blanco);
 }
@@ -57,25 +57,23 @@ body {
   margin:0;
   padding: 10px 0;
 }
-.grid-container {
-  max-width: 110rem;
+.grid-container { /* Contenedor Padre: Seleccion ataque, seleccion personaje */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
+  width: 97%;
   margin: 20px;
-  background-image: url(../assets/fondo-body.png);
-  background-repeat:no-repeat;
-  background-size: cover;
+  background-image: url(../assets/Mapa-body.webp);
+  background-repeat: no-repeat;
+  background-size:contain;
   height: 100%;
   margin-bottom: 2rem;
 }
 
 .grid-item {
+  background-color: rgba(0,0,0,0.8);
   color: black;
   padding: 20px;
   text-align: center;
-  border-radius: 5px;
   height: 80vh;
 }
 
@@ -83,12 +81,13 @@ body {
   background-color: var(--primario);
 }
 
-.grid-2 {
+.grid-2 { /*posicion de las reglas */
   display: flex;
-  justify-content: left;
+  justify-content: right;
   text-align: justify;
   color: var(--blanco);
 }
+
 h1 {
   font-size: 4rem;
 }
@@ -97,7 +96,17 @@ h2 {
 }
 ul {
   font-size: 1.1rem;
+  list-style-type: none; /* Elimina el marcador predeterminado */
+  padding-left: 2rem; /* Añade espacio a la izquierda */
 }
+
+ul li::before {
+  content: '★'; /* Añade un símbolo personalizado como marcador */
+  color: var(--blanco); /* Color del marcador */
+  font-size: 1.5rem; /* Tamaño del marcador */
+  padding-right: 10px; /* Espacio entre el marcador y el texto */
+}
+
 p {
   font-size: 1.1rem;
 }
