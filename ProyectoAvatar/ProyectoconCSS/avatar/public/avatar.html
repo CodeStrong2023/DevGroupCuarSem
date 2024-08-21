@@ -2,16 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LA LEYENDA DE AANG: AVATAR</title>
-    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/herculanum-lt-pro"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/ProyectoAvatar/ProyectoconCSS/avatar/public/css/styles.css"
+    />
     <script src="./js/avatar.js"></script>
   </head>
-  <body>
-    <div class="grid-container">
-      <div class="grid-item grid-1">
-        <h1>AVATAR 🔥💧🌱🌪️</h1>
-        <!--Esto es estatico, NO cambia, el h1 se utiliza una vez-->
 
+  <body>
+    <header class="titulo">
+      <img
+        src="/ProyectoAvatar/ProyectoconCSS/avatar/public/assets/Aang.webp"
+        alt="Aang"
+        class="logo"
+      />
+      <h1>AVATAR 🔥💧🌱🌪️</h1>
+    </header>
+    <div class="grid-container">
+      <div class="seleccion-ataque">
         <section id="seleccionar-personaje">
           <h2>Elige tu Personaje</h2>
 
@@ -64,11 +82,11 @@
           <button id="boton-reiniciar">Reiniciar</button>
         </section>
 
-        <img class="imagen" src="/public/assets/Aang.webp" alt="Aang" />
+        <img class="imagen" />
       </div>
       <div class="grid-item grid-2">
         <div class="reglas">
-          <h1>Reglas del juego</h1>
+          <h2>Reglas del juego</h2>
           <ul>
             <li>Selecciona un personaje</li>
             <li>Cada personaje tiene 3 vidas</li>
@@ -76,7 +94,7 @@
             <li>Espera el resultado</li>
             <li>El personaje que gane 3 veces gana la partida</li>
           </ul>
-          <h1>Reglas de combate</h1>
+          <h2>Reglas de combate</h2>
           <ul>
             <li>Puño gana a Barrida</li>
             <li>Patada gana Puño</li>
@@ -85,5 +103,10 @@
         </div>
       </div>
     </div>
+    <footer>
+      <img class="footer-logo"
+      src="/ProyectoAvatar/ProyectoconCSS/avatar/public/assets/logo-footer.png"
+    </footer>
   </body>
+  <!--fin body -->
 </html>
