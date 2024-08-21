@@ -1,0 +1,112 @@
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #0097A7;
+  --secundario: #070707;
+}
+
+
+body {
+  font-family:'Herculanum LT Pro', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+  margin: 0;
+  font-size: 1.1rem;
+  background-color: var(--primario);
+  background-image: linear-gradient(to top, var(--primario) 0%, var(--secundario) 100% );
+
+}
+
+
+.titulo .logo {
+  height: 110px; /* Ajusta la altura de la imagen */
+  width: auto; /* Mantén la proporción de la imagen */
+  margin-left: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.titulo {
+  display: flex;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem; /* Tamaño de la fuente ajustado */
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Especifica una altura fija */
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 10px 0; /* Relleno opcional para ajustar el espacio interno */
+  color: var(--blanco);
+}
+
+  
+.seleccion-ataque {
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: left;
+  font-size: 2rem;
+  color: var(--blanco);
+}
+
+.footer-logo {
+  height: 150px;
+  display: flex;
+  align-items: end;
+  margin:0;
+  padding: 10px 0;
+}
+.grid-container { /* Contenedor Padre: Seleccion ataque, seleccion personaje */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 97%;
+  margin: 20px;
+  background-image: url(../assets/Mapa-body.webp);
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.grid-item {
+  background-color: rgba(0,0,0,0.8);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  height: 80vh;
+}
+
+.grid-1 {
+  background-color: var(--primario);
+}
+
+.grid-2 { /*posicion de las reglas */
+  display: flex;
+  justify-content: right;
+  text-align: justify;
+  color: var(--blanco);
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+ul {
+  font-size: 1.1rem;
+  list-style-type: none; /* Elimina el marcador predeterminado */
+  padding-left: 2rem; /* Añade espacio a la izquierda */
+}
+
+ul li::before {
+  content: '★'; /* Añade un símbolo personalizado como marcador */
+  color: var(--blanco); /* Color del marcador */
+  font-size: 1.5rem; /* Tamaño del marcador */
+  padding-right: 10px; /* Espacio entre el marcador y el texto */
+}
+
+p {
+  font-size: 1.1rem;
+}
