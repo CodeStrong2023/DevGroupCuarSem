@@ -1,0 +1,160 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(/public/assets/Mapa-body.webp);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.botones {
+  background-color: #3e3d3d; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 10px 25px; /* Espaciado interno del botón */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño del texto */
+  font-family: "Arial", sans-serif; /* Fuente del texto */
+  margin: 8px 16px; /* Espaciado externo */
+  cursor: pointer; /* Cambiar cursor a pointer */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 2px 2px 2px 1px #000000;
+}
+
+.logo {
+  width: 25%;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  width: 40vw;
+  height: 80vh;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.204),
+    rgba(165, 42, 42, 0.357)
+  );
+  backdrop-filter: blur(5px);
+  border: solid 1px #ffffff55;
+  border-radius: 1rem;
+}
+
+.seleccion-ataque {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.seleccionar-personaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: red solid 2px;
+}
+
+#mensajes p {
+  text-align: center;
+}
+/* 
+.btn {
+  border: none;
+  width: 25%;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+} */
+
+.boton-grid {
+  display: grid; /* Activar CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 10px; /* Espaciado entre los botones */
+}
+
+.btn {
+  padding: 10px 20px; /* Tamaño de los botones */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-weight: 600;
+}
+
+.danger {
+  background-color: #e74c3c;
+  color: black;
+}
+
+.primary {
+  background-color: #3498db;
+  color: black;
+}
+
+.success {
+  background-color: #2ecc71;
+  color: black;
+}
+
+.warning {
+  background-color: #f39c12;
+  color: black;
+}
+
+.primary {
+  background-image: linear-gradient(to right, #007bff, #4ab2e2);
+}
+.primary:hover {
+  background-image: linear-gradient(to right, #0b7dda, #4ab2e2);
+}
+.success {
+  background-image: linear-gradient(to right, #28a745, #56c150);
+}
+.success:hover {
+  background-image: linear-gradient(to right, #34b556, #56c150);
+}
+.warning {
+  background-image: linear-gradient(to right, #ffc107, #ffda4e);
+}
+.warning:hover {
+  background-image: linear-gradient(to right, #ffb200, #ffda4e);
+}
+.danger {
+  background-image: linear-gradient(to right, #dc3545, #e0666e);
+}
+.danger:hover {
+  background-image: linear-gradient(to right, #d32838, #e0666e);
+}
+
+/* Hoja reglas */
+
+.item-reglas {
+  padding: 2rem;
+}
+
+.item-reglas ul {
+  font-size: 1.4rem;
+  text-align: start;
+}
