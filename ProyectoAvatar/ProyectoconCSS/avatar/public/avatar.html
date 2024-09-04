@@ -12,45 +12,39 @@
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Staatliches&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="/ProyectoAvatar/ProyectoconCSS/avatar/public/css/styles.css"
-    />
+    <link rel="stylesheet" href="/public/css/avatar.css" />
     <script src="./js/avatar.js"></script>
   </head>
 
   <body>
-    <header class="titulo">
-      <img
-        src="/ProyectoAvatar/ProyectoconCSS/avatar/public/assets/Aang.webp"
-        alt="Aang"
-        class="logo"
-      />
-      <h1>AVATAR 🔥💧🌱🌪️</h1>
-    </header>
+    <!-- MAIN -->
+
     <div class="grid-container">
+      <h1>AVATAR 🔥💧🌱🌪️</h1>
+      <a href="/public/reglitas.html"
+        ><button class="botones">Reglas</button></a
+      >
       <div class="seleccion-ataque">
         <section id="seleccionar-personaje">
           <h2>Elige tu Personaje</h2>
+          <div class="boton-grid">
+            <button class="btn danger" id="zuko" data-personaje="Zuko">
+              Zuko
+            </button>
+            <button class="btn primary" id="katara" data-personaje="Katara">
+              Katara
+            </button>
+            <button class="btn success" id="aang" data-personaje="Aang">
+              Aang
+            </button>
+            <button class="btn warning" id="toph" data-personaje="Toph">
+              Toph
+            </button>
+          </div>
 
-          <label for="zuko">Zuko</label>
-          <!--Esta etiqueta es para darle un indicador a los usuarios de que están seleccionando-->
-          <input type="radio" name="personaje" id="zuko" />
-          <!-- name es para agrupar todos los imputs y poder seleccionar-->
-
-          <label for="katara">Katara</label>
-          <!--El atributo for ayuda a vincular un label con un imput a través del mismo id-->
-          <input type="radio" name="personaje" id="katara" />
-          <!--Acá van los personajes-->
-
-          <label for="aang">Aang</label>
-          <input type="radio" name="personaje" id="aang" />
-          <!--Le damos un atributo id para saber cual es el valor de cada uno-->
-
-          <label for="toph">Toph</label>
-          <input type="radio" name="personaje" id="toph" />
-
-          <button id="boton-personaje">Seleccionar</button>
+          <button style="margin-top: 2rem" id="boton-personaje" class="botones">
+            Seleccionar
+          </button>
           <!-- El botón para seleccionar el personaje-->
         </section>
 
@@ -68,9 +62,9 @@
           </p>
           <!--Con la etiqueta spam vamos a modificar el 3 con JS-->
           <p>
-            <button id="boton-punio">Punio ✊</button>
-            <button id="boton-patada">Patada 🦶</button>
-            <button id="boton-barrida">Barrida 👣</button>
+            <button id="boton-punio" class="botones">Punio ✊</button>
+            <button id="boton-patada" class="botones">Patada 🦶</button>
+            <button id="boton-barrida" class="botones">Barrida 👣</button>
           </p>
         </section>
 
@@ -79,34 +73,9 @@
         </section>
 
         <section id="reiniciar">
-          <button id="boton-reiniciar">Reiniciar</button>
+          <button id="boton-reiniciar" class="botones">Reiniciar</button>
         </section>
-
-        <img class="imagen" />
-      </div>
-      <div class="grid-item grid-2">
-        <div class="reglas">
-          <h2>Reglas del juego</h2>
-          <ul>
-            <li>Selecciona un personaje</li>
-            <li>Cada personaje tiene 3 vidas</li>
-            <li>Selecciona un ataque</li>
-            <li>Espera el resultado</li>
-            <li>El personaje que gane 3 veces gana la partida</li>
-          </ul>
-          <h2>Reglas de combate</h2>
-          <ul>
-            <li>Puño gana a Barrida</li>
-            <li>Patada gana Puño</li>
-            <li>Barrida gana a Patada</li>
-          </ul>
-        </div>
       </div>
     </div>
-    <footer>
-      <img class="footer-logo"
-      src="/ProyectoAvatar/ProyectoconCSS/avatar/public/assets/logo-footer.png"
-    </footer>
   </body>
-  <!--fin body -->
 </html>
