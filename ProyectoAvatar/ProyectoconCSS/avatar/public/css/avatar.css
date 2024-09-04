@@ -40,7 +40,7 @@ body {
   text-align: center;
   padding: 2rem;
   width: 40vw;
-  height: 80vh;
+  min-height: 80vh;
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.204),
@@ -78,6 +78,13 @@ body {
 #mensajes p {
   text-align: center;
 }
+
+.imagen-titulo {
+  padding: 1rem;
+  width: 20rem;
+  max-width: 30rem;
+}
+
 /* 
 .btn {
   border: none;
