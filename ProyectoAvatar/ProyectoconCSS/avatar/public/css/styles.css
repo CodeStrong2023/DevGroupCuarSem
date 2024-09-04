@@ -1,22 +1,25 @@
 :root {
   --blanco: #ffffff;
   --oscuro: #212121;
-  --primario: #0097A7;
+  --primario: #0097a7;
   --secundario: #070707;
 }
 
-
 body {
-  font-family:'Herculanum LT Pro', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Herculanum LT Pro", "Arial Narrow", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:auto;
+  height: auto;
   margin: 0;
   font-size: 1.1rem;
   background-color: var(--primario);
-  background-image: linear-gradient(to top, var(--primario) 0%, var(--secundario) 100% );
+  background-image: linear-gradient(
+    to top,
+    var(--primario) 0%,
+    var(--secundario) 100%
+  );
   overflow: hidden;
 }
 
@@ -49,9 +52,8 @@ body {
   color: var(--blanco);
 }
 
-  
 .seleccion-ataque {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: left;
   padding-left: 20px;
@@ -59,7 +61,8 @@ body {
   color: var(--blanco);
 }
 
-.grid-container { /* Contenedor Padre: Seleccion ataque, seleccion personaje */
+.grid-container {
+  /* Contenedor Padre: Seleccion ataque, seleccion personaje */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 98%;
@@ -72,16 +75,15 @@ body {
 }
 
 .grid-item {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: black;
   padding: 20px;
   text-align: center;
   height: 80vh;
 }
 
-
-
-.grid-2 { /*posicion de las reglas */
+.grid-2 {
+  /*posicion de las reglas */
   display: flex;
   justify-content: right;
   text-align: justify;
@@ -102,7 +104,7 @@ ul {
 }
 
 ul li::before {
-  content: '★'; /* Añade un símbolo personalizado como marcador */
+  content: "★"; /* Añade un símbolo personalizado como marcador */
   color: var(--blanco); /* Color del marcador */
   font-size: 1.5rem; /* Tamaño del marcador */
   padding-right: 10px; /* Espacio entre el marcador y el texto */
