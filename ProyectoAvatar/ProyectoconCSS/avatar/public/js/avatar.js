@@ -1,8 +1,15 @@
+// Variables globales
+
 let ataqueJugador;
 let ataqueEnemigo;
 let vidasJugador = 3;
 let vidasEnemigo = 3;
 let personajeSeleccionado = "";
+//
+let botonPunio = document.getElementById("boton-punio");
+let botonPatada = document.getElementById("boton-patada");
+let botonBarrida = document.getElementById("boton-barrida");
+//
 
 function iniciarJuego() {
   let sectionSeleccionarAtaque = document.getElementById("seleccionar-ataque");
@@ -30,11 +37,8 @@ function iniciarJuego() {
   let sectionReiniciar = document.getElementById("reiniciar");
   sectionReiniciar.style.display = "none";
 
-  let botonPunio = document.getElementById("boton-punio");
   botonPunio.addEventListener("click", ataquePunio);
-  let botonPatada = document.getElementById("boton-patada");
   botonPatada.addEventListener("click", ataquePatada);
-  let botonBarrida = document.getElementById("boton-barrida");
   botonBarrida.addEventListener("click", ataqueBarrida);
 
   let botonReiniciar = document.getElementById("boton-reiniciar");
@@ -152,11 +156,8 @@ function crearMensajeFinal(resultado) {
 
   sectionMensaje.appendChild(parrafo);
 
-  let botonPunio = document.getElementById("boton-punio");
   botonPunio.disabled = true;
-  let botonPatada = document.getElementById("boton-patada");
   botonPatada.disabled = true;
-  let botonBarrida = document.getElementById("boton-barrida");
   botonBarrida.disabled = true;
 }
 
