@@ -40,3 +40,76 @@
 .col-4 {
   width: 33, 333333333%;
 }
+
+#seccion4 aside ul li {
+  background: violet;
+  padding: 10px;
+  margin: 2px 10px;
+  list-style: square;
+  list-style-position: inside;
+}
+
+/* Estilos para la lista de enlaces en el aside de la sección 4 */
+#seccion4 aside ul li {
+  background: violet;
+  padding: 10px;
+  margin: 2px 10px;
+  list-style: square;
+  list-style-position: inside;
+}
+
+/* Estilos para el título del artículo */
+#seccion4 article h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  margin: 20px;
+}
+
+/* Estilos para los inputs en la columna derecha */
+#seccion4 aside#der input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* Estilos para la imagen dentro del párrafo */
+/* Escritorio grande (mayor a 1200px) */
+@media (min-width: 1200px) {
+  #seccion4 article p img {
+     width: 50%;
+  }
+}
+
+/* Escritorio mediano (entre 992px y 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #seccion4 article p img {
+     width: 60%;
+  }
+}
+
+/* Escritorio pequeño (entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #seccion4 article p img {
+     width: 100%;
+  }
+}
+
+/* Pantallas móviles (menor a 768px) */
+@media (max-width: 767px) {
+  #seccion4 article p img {
+     width: 100%;
+     margin-bottom: 20px;
+  }
+}
+
+/* Estilos para el footer */
+footer {
+  padding: 20px 10px;
+}
+
+footer div {
+  background: rgb(156, 14, 156);
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
