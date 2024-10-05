@@ -11,8 +11,8 @@ app.use(urlencoded({ extended: false }));
 
 // Rutas
 app.get("/", (req, res) => res.json({ message: "Bienvenido a mi proyecto" }));
-app.use("api", tareasRoutes);
-app.use("api", authRoutes);
+app.use("/api", tareasRoutes);
+app.use("/api", authRoutes);
 
 // Manejando errores
 app.use((err, req, res, next) => {
