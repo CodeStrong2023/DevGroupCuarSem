@@ -1,12 +1,12 @@
-package utn.Tienda_Libros.servicio;
+package utn.tienda_libros.servicio;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import UTN.Tienda_Libros.modelo.Libro;
-import UTN.Tienda_Libros.repositorio.LibroRepositorio;
+import utn.tienda_libros.modelo.Libro;
+import utn.tienda_libros.repositorio.LibroRepositorio;
 
 @Service
 public class LibroServicio implements ILibroServicio{
@@ -34,5 +34,8 @@ public class LibroServicio implements ILibroServicio{
     public void eliminarLibro(Libro libro) {
         libroRepositorio.delete(libro);
     }
-    
+
+    public Object listarLibros() {
+        return null;
+    }
 }

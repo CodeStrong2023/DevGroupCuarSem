@@ -1,8 +1,8 @@
-package utn.Tienda_Libros.servicio;
+package utn.tienda_libros.servicio;
 
 import java.util.List;
 
-import UTN.Tienda_Libros.modelo.Libro;
+import utn.tienda_libros.modelo.Libro;
 
 public interface ILibroServicio {
     
