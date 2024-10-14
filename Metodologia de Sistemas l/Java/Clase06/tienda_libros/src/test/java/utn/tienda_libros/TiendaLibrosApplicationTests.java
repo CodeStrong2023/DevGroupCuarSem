@@ -1,4 +1,4 @@
-package UTN.Tienda_Libros;
+package utn.tienda_libros;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
