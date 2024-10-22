@@ -8,10 +8,10 @@
 		<version>3.3.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>UTN</groupId>
-	<artifactId>Tienda_Libros</artifactId>
+	<groupId>utn</groupId>
+	<artifactId>tienda_libros</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Tienda_Libros</name>
+	<name>tienda_libros</name>
 	<description>Sistema Tienda de Libros</description>
 	<url/>
 	<licenses>
