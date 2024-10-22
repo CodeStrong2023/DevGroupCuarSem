@@ -1,19 +1,18 @@
 package utn.tienda_libros;
 
-import org.springframework.boot.ConfigurableBootstrapContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
-import utn.tienda_libros.vista.LibroForm;
+import utn.tienda_libros.vista.LibroFrom;
 
 import java.awt.EventQueue;
 
 @SpringBootApplication
 public class TiendaLibrosApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(TiendaLibrosApplication.class, args);
 
 		ConfigurableApplicationContext contextoSpring =
 				new SpringApplicationBuilder(TiendaLibrosApplication.class)
@@ -22,10 +21,10 @@ public class TiendaLibrosApplication {
 						.run(args);
 
 		//Ejecutamos el codigo para cargar el formulario
-		EventQueue.invokeLater(() -> { //Metodo lambda
-			//obtenemos elm onjeto from a traves del spring
-			LibroForm libroForm = contextoSpring.getBean(LibroForm.class);
-			libroForm.setVisible(true);
+		EventQueue.invokeLater(() -> { //Metodo Lambda
+			//Obtenemos el metodo from a traves del spring
+			LibroFrom libroFrom = contextoSpring.getBean(LibroFrom.class);
+			libroFrom.setVisible(true);
 		});
 	}
 }
