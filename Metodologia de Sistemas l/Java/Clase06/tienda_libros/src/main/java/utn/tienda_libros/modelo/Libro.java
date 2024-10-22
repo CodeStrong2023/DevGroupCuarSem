@@ -1,5 +1,6 @@
 package utn.tienda_libros.modelo;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,9 +18,10 @@ import lombok.ToString;
 public class Libro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer idlibro;
+    Integer idLibro;
     String nombreLibro;
     String autor;
     Double precio;
     Integer existencias;
+
 }
