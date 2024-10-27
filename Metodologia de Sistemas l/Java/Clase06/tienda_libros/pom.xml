@@ -8,10 +8,10 @@
 		<version>3.3.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>UTN</groupId>
-	<artifactId>Tienda_Libros</artifactId>
+	<groupId>utn</groupId>
+	<artifactId>tienda_libros</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Tienda_Libros</name>
+	<name>tienda_libros</name>
 	<description>Sistema Tienda de Libros</description>
 	<url/>
 	<licenses>
@@ -49,6 +49,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf</artifactId>
+			<version>2.0</version> <!-- Verifica que estés usando la última versión -->
 		</dependency>
 	</dependencies>
 

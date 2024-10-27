@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TiendaLibrosApplication<Tienda_Libros>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "utn.tienda_libros.TiendaLibrosApplication",
+            "projectName": "Tienda_Libros",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
