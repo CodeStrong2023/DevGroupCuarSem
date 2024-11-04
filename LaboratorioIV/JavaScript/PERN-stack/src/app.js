@@ -1,27 +1,33 @@
-import express, { urlencoded } from "express";
-import morgan from "morgan";
-import tareasRoutes from "./router/tareas.routes.js";
-import authRoutes from "./router/auth.routes.js";
-import cookieParser from "cookie-parser";
+import e from "express";
+import express from "express";
+import tareasRoutes from "./router/tareas.routes.js"
+import authRoutes from "./router/auth.routes.js"
+import cookiePacser from "cookie-parser";
+import dotenv from "cors";
 
 const app = express();
-// Middlewares
+//Middlewars
 app.use(morgan("dev"));
-app.use(cookieParser());
+app.use(cors(
+    {
+        origin: "http://localhost:5173",
+        Credential: true
+    }
+))
+app.use(cookiePacser());
 app.use(express.json());
-app.use(urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 
-// Rutas
-app.get("/", (req, res) => res.json({ message: "Bienvenido a mi proyecto" }));
-app.use("/api", tareasRoutes);
-app.use("/api", authRoutes);
+app.get("/", (req, res) => res.json({messaje: "Bienvenidos a mi proyecto"}));
+app.use('/api', tareasRoutes);
+app.use('/api', authRoutes)
 
-// Manejando errores
-app.use((err, req, res, next) => {
-  res.status(500).json({
-    status: "error",
-    message: err.message,
-  });
+//manejando errores
+app.use((req, res, next) => {
+    res.status(500).json({
+        status: 'error',
+        messaje: err.messaje
+});
 });
 
 export default app;
