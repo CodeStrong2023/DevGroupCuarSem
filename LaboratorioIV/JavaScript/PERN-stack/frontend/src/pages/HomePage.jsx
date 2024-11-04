@@ -1,7 +1,13 @@
-import React from "react";
+import {useContext} from 'react';
+import { AuthContext } from '../context/AuthContext';
 
 function HomePage() {
-  return <div></div>;
+  // eslint-disable-next-line no-unused-vars
+  const data = useContext(AuthContext);
+
+  return (
+    <div>HomePage</div>
+  )
 }
 
-export default HomePage;
+export default HomePage
