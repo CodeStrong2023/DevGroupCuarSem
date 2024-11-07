@@ -4,8 +4,8 @@ function hola(nombre) {
             console.log("hola" + nombre)
             resolve(nombre)
         }, 1000);
-    })
-};
+    });
+}
 
 function hablar(nombre) {
     return new Promise((resolve, reject) => { //Usamos la sintaxis ES6
@@ -28,7 +28,7 @@ function adios(nombre) {
 
 //Llamamos a la función
 console.log('Iniciando el proceso...')
-hola('Ariel')
+hola(' Ariel')
     .then(hablar)
     .then(hablar)
     .then(hablar)
