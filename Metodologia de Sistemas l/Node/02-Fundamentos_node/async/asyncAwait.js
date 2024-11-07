@@ -6,8 +6,8 @@ async function hola(nombre) {
             console.log("hola" + nombre)
             resolve(nombre)
         }, 1000);
-    })
-};
+    });
+}
 
 async function hablar(nombre) {
     return new Promise((resolve, reject) => { //Usamos la sintaxis ES6
@@ -45,7 +45,7 @@ async function main() {
 
 //Codigo en ingles
 function sayHello(name) {
-    return new Promise( (resolve, reject) {
+    return new Promise( (resolve, reject) => {
         setTimeout( () => {
             console.log("hello " + name);
             resolve(name);
