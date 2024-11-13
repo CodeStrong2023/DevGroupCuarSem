@@ -8,87 +8,171 @@ $paragraph-size: 1.5em;
 $footer-background: rgb(199, 116, 20);
 
 body {
-    background-color: rgb(241, 208, 115);
-    margin: 0;
-    padding: 0;
-    font-family: $font-stack;
+  background-color: rgb(241, 208, 115);
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
 }
 
 nav {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    color: $primary-text-color;
-    padding: 15px;
-    
-    .icons {
-        display: flex;
-        gap: 15px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: $primary-text-color;
+  padding: 15px;
 
-        button {
-            background: none;
-            border-style: none;
-        }
+  .icons {
+    display: flex;
+    gap: 15px;
+
+    button {
+      background: none;
+      border-style: none;
     }
+  }
 }
 
 p {
-    font-size: $paragraph-size;
-    padding-left: 30px;
+  font-size: $paragraph-size;
+  padding-left: 30px;
 }
 
 button {
-    width: 12vw;
-    padding: 20px;
-    background-color: $quaternary-color;
-    border-style: none;
-    border-radius: 35px;
-    color: white;
-    font-size: 1em;
+  width: 12vw;
+  padding: 20px;
+  background-color: $quaternary-color;
+  border-style: none;
+  border-radius: 35px;
+  color: white;
+  font-size: 1em;
 }
 
 img {
-    width: 25vw;
-    border-radius: 19px;
+  width: 25vw;
+  border-radius: 19px;
 }
 
 article {
-    width: auto;
-    color: $primary-text-color;
+  width: auto;
+  color: $primary-text-color;
+  display: flex;
+  justify-content: space-around;
+
+  .info-section {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 25px;
+    background-color: whitesmoke;
+  }
 
-    .info-section {
-        display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-        gap: 25px;
-        background-color: whitesmoke;
+  .imagen-section {
+    width: 50%;
+    background-color: rgb(119, 109, 64);
+
+    img {
+      width: 100%;
     }
-
-    .imagen-section {
-        width: 50%;
-        background-color: rgb(119, 109, 64);
-
-        img {
-            width: 100%;
-        }
-    }
+  }
 }
 
 main {
-    background-color: $primary-color;
+  background-color: $primary-color;
 }
 
 footer {
-    background-color: $footer-background;
-    width: 100%;
-    height: 250px;
+  background-color: $footer-background;
+  width: 100%;
+  height: 250px;
 }
 
 h1 {
-    font-size: 3em;
-    padding: 0;
-    margin: 0;
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.section1 {
+  h2 {
+    font-weight: 300;
+    padding-bottom: 60px;
+  }
+  .product-card {
+    width: 14vw;
+    height: 45vh;
+    background-color: $secundary-color;
+    color: $primary-tex-color;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 12px;
+    svg {
+      width: 28px;
+      height: 28px;
+      stroke: olive;
+      stroke-width: yellow;
+    }
+  }
+}
+
+.card-section1 {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 200px;
+  row-gap: 200px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  background-color: rgb(214, 201, 176);
+  padding: 60px;
+  h2 {
+    color: $primary-tex-color;
+    font-size: 2em;
+  }
+}
+
+.section2 {
+  @extend .section1;
+  .product-card {
+    background-color: $tertiary-color;
+    color: rgb(37, 51, 12);
+  }
+}
+
+@mixin flexCenter($direction, $content, $align) {
+  display: flex;
+  flex-diorection: $direction;
+  justify-content: $content;
+  align-item: $align;
+}
+@mixin buttonStyle {
+  button {
+    background: none;
+    border-style: none;
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  @include buttonStyle;
+}
+
+article {
+  width: auto;
+  color: $primary-tex-color;
+  @include flexCenter(row, spacebetween, center);
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 70px;
 }
