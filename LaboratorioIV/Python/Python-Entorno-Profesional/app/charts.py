@@ -10,7 +10,7 @@ def generate_pie_chart(labels, values):
   fig, ax = plt.subplots()
   ax.pie(values, labels=labels)
   ax.axis('equal')
-  plt.savefig('./imgs/pie.png')
+  plt.savefig('charts_pie_final_de_prueba.png')
   plt.close()
 
 if __name__ == '__main__':
